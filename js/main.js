@@ -60,7 +60,10 @@
 		// Preloader
 		var overlay = document.getElementById("overlay");
 			window.addEventListener('load', function(){
-			  overlay.style.display = 'none';
+				var overlayNeg = document.getElementsByClassName("overlay-neg");
+				while (overlayNeg.length)
+					overlayNeg[0].classList.remove("overlay-neg");
+				overlay.style.display = 'none';
 		});
 
 	
