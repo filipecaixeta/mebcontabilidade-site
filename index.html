@@ -38,6 +38,19 @@
 			.section-title {
 				margin-bottom: 30px;
 			}
+			.home-static {
+				/* height: auto; */
+				min-height: 580px;
+			}
+			@media only screen and (max-device-width: 480px) {
+				.home-static p {
+					font-size: 15px;
+				}
+				.home-static {
+					height: auto;
+					min-height: 580px;
+				}
+			}
 		</style>
 		<!-- Css Ends-->
 
@@ -63,9 +76,6 @@
 							<div class="logo">
 								<a class="navbar-brand white-logo" href="index.html"><img src="images/logo-white.png" alt="" /></a>
 								<a class="navbar-brand black-logo" href="index.html"><img src="images/logo-black.png" alt="" /></a>
-								<div class="navbar-search-mob">
-									<a class="mk-search-trigger mk-fullscreen-trigger" id="search-button" href="#"><span class="pe-7s-search"></span></a>
-								</div>
 							</div>
 						</div>
 						<div class="col-md-9">
@@ -101,7 +111,7 @@
 		<div class="home-static dark-overlay overlay-neg" style="background:url(images/banner/26.jpg) no-repeat fixed;">
 			<div class="header-inner">
 				<div class="header-table">
-					<div class="col-md-offset-2 col-md-8">
+					<div class="col-md-offset-2 col-md-8" style="padding: 80px;">
 <p>A MB contabilidade está no mercado para atender os clientes com profissionalismo, confiança e promover uma parceria de negócios duradoura, auxiliando os clientes para um crescimento sustentável e consistente, onde o cliente não terá problemas com tributações indevidas e multas na área contábil. 
 <br>Localizado no centro de campinas.</p>
 						<!-- <h2>Lorem Ipsum is not simply random</h2> -->
@@ -227,9 +237,6 @@
 
 		<!-- Magnific Popup Plugin JS -->
 		<script src="js/magnific-popup.min.js"></script>
-
-		<!-- MK Search JS -->
-		<script src="js/mk-search.js"></script>
 
 		<!-- Owl Carousel Plugin -->
 		<script src="js/owl.carousel.min.js"></script>
