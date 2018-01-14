@@ -113,14 +113,14 @@
 		</div>
 			
             <!--Contact and map-->
-            <form class="overlay-neg" name="sentMessage" id="contactForm" novalidate>
+            <form class="overlay-neg" name="sentMessage" id="orcamentoForm" novalidate>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="contact">
                                 <div class="floating-label-form-group input-controls control-group">
                                     <p>Ramo de Atividade</p>
-                                    <select name="Ramo de Atividade">
+                                    <select name="Ramo de Atividade" id="ramodeatividade">
                                         <option>Associação</option>
                                         <option>Comércio</option>
                                         <option>Indústria</option>
@@ -130,7 +130,7 @@
                                 </div>
                                 <div class="floating-label-form-group input-controls control-group">
                                     <p>Tributação</p>
-                                    <select name="Tributação">
+                                    <select name="Tributação" id="tributacao">
                                         <option>Entidade sem Fins Lucrativos</option>
                                         <option>Lucro Presumido</option>
                                         <option>Lucro Real</option>
@@ -140,7 +140,7 @@
                                 </div>
                                 <div class="floating-label-form-group input-controls control-group">
                                     <p>Serviço desejado</p>
-                                    <select name="Tributação">
+                                    <select name="Serviço desejado" id="servicodesejado">
                                         <option>Abertura de empresa</option>
                                         <option>Alteração</option>
                                         <option>Encerramento</option>
@@ -150,7 +150,7 @@
                                 </div>
                                 <div class="floating-label-form-group input-controls control-group">
                                     <p>Nº de empregados registrados</p>
-                                    <input type="text" id="name" required data-validation-required-message="Please enter your name." />
+                                    <input type="text" id="nroempregados"/>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <!-- <div id="success"></div>
@@ -159,21 +159,21 @@
                         </div>
                         <div class="col-md-6">
                             <div class="contact">
+                                <div style="width:100%; height: 25px;"></div>
                                 <div class="floating-label-form-group input-controls control-group">
-                                    <p>&nbsp;</p>
-                                    <input type="text" placeholder="Nome" id="name" required data-validation-required-message="Please enter your name." />
+                                    <input type="text" placeholder="Nome" id="name" required data-validation-required-message="Por favor coloque seu nome." />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="floating-label-form-group input-controls control-group">
-                                    <input type="email" placeholder="Email" id="email" required data-validation-required-message="You must enter your email address."/>
+                                    <input type="email" placeholder="Email" id="email" required data-validation-required-message="Por favor informe um email"/>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="floating-label-form-group input-controls control-group">
-                                    <input type="tel" placeholder="Telefone" id="phone" required data-validation-required-message="Insert your phone number." />
+                                    <input type="tel" placeholder="Telefone" id="phone" required data-validation-required-message="Por favor informe seu telefone" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="floating-label-form-group input-controls control-group">
-                                    <textarea rows="10" style="height: 125px !important;" placeholder="Informações adicionais" id="message" required data-validation-required-message="Please leave a message."></textarea>
+                                    <textarea rows="10" style="height: 125px !important;" id="message" placeholder="Informações adicionais" id="message"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -192,73 +192,48 @@
 			
 			<!-- Footer Area -->
 			<footer class="site-footer footer-v2 overlay-neg">
-                <div class="container">
-                    <div class="row">
-                        <div class="site-bottom clearfix">
-                            <div class="col-md-3 col-sm-6 site-bottom-1">
-                                <aside class="widget widget-nav">
-                                    <h3 class="widget-title">Features</h3>
-                                    <ul class="menu">
-                                        <li><a href="#">Icons</a></li>
-                                        <li><a href="#">Fonts</a></li>
-                                        <li><a href="#">UI Kits</a></li>
-                                        <li><a href="#">Themes</a></li>
-                                        <li><a href="#">Courses</a></li>
-                                        <li><a href="#">Wireframe Kits</a></li>
-                                    </ul>
-                                </aside>
+                    <div class="container">
+                        <div class="row">
+                            <div class="site-bottom clearfix">
+                                <div class="col-md-6 col-sm-6 site-bottom-1">
+                                    <aside class="widget widget-nav">
+                                        <ul class="menu">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="servicos.html">Serviços</a></li>
+                                            <ul class="menu" style="margin-left: 10px;">
+                                                <li><a href="servicos.html">-Contábil</a></li>
+                                                <li><a href="servicos.html">-ITR</a></li>
+                                                <li><a href="servicos.html">-Trabalhista</a></li>
+                                                <li><a href="servicos.html">-Fiscal e Tributário</a></li>
+                                            </ul>
+                                            <li><a href="orcamento.html">Solicite um orçamento</a></li>
+                                        </ul>
+                                    </aside>
+                                </div>
+                                <div class="col-md-6 col-sm-6 site-bottom-4">
+                                    <aside class="widget widget-text">
+                                        <h3 class="widget-title">Contato</h3>
+                                    <p>Email: mebcontab<span style="display: none;">dgfdsfgdgfsdf</span>@gmail.com</p>
+                                    <p>Telefone<br>
+                                    (62) 3233-7508<br>
+                                    (62) 99834-6043</p>
+                                    </aside>
+                                </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 site-bottom-2">
-                                <aside class="widget widget-nav">
-                                    <h3 class="widget-title">Support</h3>
-                                    <ul class="menu">
-                                        <li><a href="#">FAQ’s</a></li>
-                                        <li><a href="#">Discount</a></li>
-                                        <li><a href="#">Affiliates</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Terms of Service</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                    </ul>
-                                </aside>
-                            </div>
-                            <div class="col-md-3 col-sm-6 site-bottom-3">
-                                <aside class="widget widget-nav">
-                                    <h3 class="widget-title">About US</h3>
-                                    <ul class="menu">
-                                        <li><a href="#">FAQ’s</a></li>
-                                        <li><a href="#">Discount</a></li>
-                                        <li><a href="#">Affiliates</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Terms of Service</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                    </ul>
-                                </aside>
-                            </div>
-                            <div class="col-md-3 col-sm-6 site-bottom-4">
-                                <aside class="widget widget-text">
-                                    <h3 class="widget-title">Newsletter</h3>
-                                    <p>Subscribe to our newsletter to receive news, updates, free stuff and new releases by email. We don't do spam.</p>
-                                    <form class="form-newsletter-ft" action="#" method="get">
-                                        <input name="email" placeholder="Enter your email" required="" type="email">
-                                        <input value="Go" type="submit">
-                                    </form>
-                                </aside>
-                            </div>
-                        </div>
-                        <!-- .site-bottom -->
-                        <div class="bottom-footer">
-                            <div class="col-md-6 col-sm-4 pull-right">
-                            </div>
-                            <div class="col-md-6 col-sm-8">
-                                <div class="copyright">
-                                    <p>&copy; 2017 All Rights Reserved M&B Contabilidade</p>
+                            <!-- .site-bottom -->
+                            <div class="bottom-footer">
+                                <div class="col-md-6 col-sm-4 pull-right">
+                                </div>
+                                <div class="col-md-6 col-sm-8">
+                                    <div class="copyright">
+                                        <p>&copy; 2018 All Rights Reserved M&B Contabilidade</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- .row -->
                     </div>
-                    <!-- .row -->
-                </div>
-            </footer><!-- /Footer Area -->
+                </footer><!-- /Footer Area -->
 			
 	
 		<!-- Scroll To Top Button -->		
