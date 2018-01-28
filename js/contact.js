@@ -22,7 +22,7 @@ $(function() {
             }
 
             $.ajax({
-                url: "https://formspree.io/mebcontab@gmail.com",
+                url: "https://formspree.io/mebcontabilidade@gmail.com",
                 type: "POST",
                 data: {
                     Nome: name,
@@ -51,7 +51,7 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Desculpe " + firstName + ", parece que nosso servidor de emails está com problemas. Tente novamente mais tarde ou mande um email para mebcontab@gmail.com");
+                    $('#success > .alert-danger').append("<strong>Desculpe " + firstName + ", parece que nosso servidor de emails está com problemas. Tente novamente mais tarde ou mande um email para mebcontabilidade@gmail.com");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
@@ -91,7 +91,7 @@ $(function() {
             }
 
             $.ajax({
-                url: "https://formspree.io/mebcontab@gmail.com",
+                url: "https://formspree.io/mebcontabilidade@gmail.com",
                 type: "POST",
                 data: {
                     Nome: name,
@@ -124,7 +124,7 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Desculpe " + firstName + ", parece que nosso servidor de emails está com problemas. Tente novamente mais tarde ou mande um email para mebcontab@gmail.com");
+                    $('#success > .alert-danger').append("<strong>Desculpe " + firstName + ", parece que nosso servidor de emails está com problemas. Tente novamente mais tarde ou mande um email para mebcontabilidade@gmail.com");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
