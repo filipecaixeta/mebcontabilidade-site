@@ -94,14 +94,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-4 col-ms-12 col-xs-12">
-							<div class="single-contact-bar">
-								<i class="pe-7s-map-marker"></i>
-								<h4>Endereço</h4>
-								<p>Avenida Ceará, número 101 quadra 112 lote 01<br>
-								Setor Campinas Goiânia Goiás</p>
-							</div>
-						</div>
+						<div class="col-md-2"></div>
 						<div class="col-md-4 col-ms-12 col-xs-12">
 							<div class="single-contact-bar">
 								<i class="pe-7s-mail"></i>
@@ -124,7 +117,8 @@
 			<!--Contact and map-->
 			<div class="container overlay-neg">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
 						<div class="page-wrapper">
 							<div class="contact-area mb-40">
 								<div class="contact">
@@ -151,12 +145,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-6">
-						<!-- google map -->
-						<div class="contact-map">
-							<div id="map-space"></div>
-						</div><!-- /google map -->
 					</div>
 				</div>
 			</div><!--/Contact and map-->
@@ -246,40 +234,6 @@
 		<!-- Main Javascript -->
 		<script src="js/main.js"></script>
 
-		<!-- Google Maps -->
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd_3k_CxcexDYnlQ9fyDx-cj9wSLkdD9g"></script>
-        <script>
-            var myCenter=new google.maps.LatLng(-16.6734411,-49.2944944);
-            function initialize()
-            {
-                var mapProp = {
-                  center:myCenter,
-                  scrollwheel: false,
-                  zoom:17,
-                  mapTypeId:google.maps.MapTypeId.ROADMAP,
-				  disableDefaultUI: false
-                  };
-                var map=new google.maps.Map(document.getElementById("map-space"),mapProp);
-                var marker=new google.maps.Marker({
-                  position:myCenter,
-          animation: google.maps.Animation.DROP,
-                  icon:'images/marker-ball.png',
-                    map: map,
-                  });
-				  
-				  
-                var styles = [
-                  {
-                    stylers: [
-                      { hue: "#343434" },
-                      { saturation: -100 }
-                    ]
-                  },
-                ];
-                map.setOptions({styles: styles});
-                marker.setMap(map);
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
+		
 	</body>
 </html>
